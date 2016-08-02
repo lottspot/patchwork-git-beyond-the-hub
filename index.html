@@ -21,6 +21,17 @@
         background: none;
         box-shadow: none;
       }
+      ul.stripped {
+        list-style-type: none;
+      }
+      li.ok:before  {
+        content: "\2713";
+        color: darkgreen;
+      }
+      li.bad:before {
+        content: "\2717";
+        color: crimson;
+      }
     </style>
   </head>
   <body>
@@ -84,16 +95,72 @@
           </section>
         </section>
         <section>
-          <h2>Good Commits &trade;</h2>
-          <aside class='notes'>
-            All this talk about good commits... what do they look like?
-            <ul>
-              <li>Keep commits small</li>
-              <li>Group related changes into the same commit</li>
-              <li>Keep unrelated changes out of that commit</li>
-              <li>WRITE A USEFUL COMMIT MESSAGE</li>
+          <section>
+            <h2>Good Commits &trade;</h2>
+            <ul class='stripped'>
+              <li class='fragment ok'>Smaller is better</li>
+              <li class='fragment ok'>Do keep related changed together</li>
+              <li class='fragment bad'>Don't include unrelated changes</li>
             </ul>
-          </aside>
+            <h4 class='fragment'>And most importantly...</h4>
+            <aside class='notes'>
+              All this talk about good commits... what do they look like?
+              <ul>
+                <li>Keep commits small</li>
+                <li>Group related changes into the same commit</li>
+                <li>Keep unrelated changes out of that commit</li>
+                <li>WRITE A USEFUL COMMIT MESSAGE</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h1>WRITE A USEFUL COMMIT MESSAGE</h1>
+          </section>
+          <section>
+            <h3>I will cry in hopeless despair:</h3>
+            <ul class='stripped'>
+              <li class='fragment bad'>"Bunch of changes"</li>
+              <li class='fragment bad'>"Did the needful"</li>
+              <li class='fragment bad'>"Lots of fixes"</li>
+            </ul>
+            <aside class='notes'>
+              <ul>
+                <li>"Bunch of changes"</li>
+                <li>"Did the needful"</li>
+                <li>"Lots of fixes"</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h3>Seem better on first appraisal, but still not very good:</h3>
+            <ul class='stripped'>
+              <li class='fragment bad'>"Re-wrote nested loop using a recursive function"</li>
+              <li class='fragment bad'>"Added new external dependency"</li>
+              <li class='fragment bad'>"Removed module"</li>
+            </ul>
+            <aside class='notes'>
+              <ul>
+                <li>"Re-wrote nested loop using a recursive function"</li>
+                <li>"Added new external dependency"</li>
+                <li>"Removed module"</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h3>Brings joy to my heart:</h3>
+            <ul class='stripped'>
+              <li class='fragment ok'>"Make fonts more readable on large screens"</li>
+              <li class='fragment ok'>"Improve performance on mobile devices"</li>
+              <li class='fragment ok'>"Fix data corruption bug"</li>
+            </ul>
+            <aside class='notes'>
+              <ul>
+                <li>"Make fonts more readable on large screens"</li>
+                <li>"Improve performance on mobile devices"</li>
+                <li>"Fix data corruption bug"</li>
+              </ul>
+            </aside>
+          </section>
         </section>
         <section>
           <h2>Make better work flows</h2>
